@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <h1>
+    <%=@list.name%>
+  </h1>
+  <div class="btn btn-primary">
+    <%= link_to "Edit", edit_list_path %>
+  </div>
+  <div class="btn btn-danger">
+    <%= link_to "Home", lists_path %>
+  </div>
+  <div class="btn btn-danger">
+    <%= link_to "delete", list_path(@list), method: 'delete'%>
+  </div>
+</div>
