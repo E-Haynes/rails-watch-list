@@ -2,7 +2,5 @@
   <% @lists.each do |list| %>
   <h2><%= list.name %> </h2>
   <% end %>
-  <div class="btn btn-primary">
-    <%= link_to "Create", new_list_path %>
-  </div>
+    <%= link_to "Create", new_list_path, class: 'btn btn-primary' %>
 </div>

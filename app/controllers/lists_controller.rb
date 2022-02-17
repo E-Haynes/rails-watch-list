@@ -5,7 +5,7 @@ class ListsController < ApplicationController
   end
 
   def show
-    set_list
+    @list = List.find(params[:id])
   end
 
   def new
@@ -34,6 +34,9 @@ class ListsController < ApplicationController
     end
   end
 
+  def destroy
+    set_list
+  end
   private
 
   def set_list
