@@ -33,9 +33,6 @@ class MoviesController < ApplicationController
     end
   end
 
-  def destroy
-  end
-
   private
 
   def movie_params
